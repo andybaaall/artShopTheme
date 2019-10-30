@@ -1,0 +1,33 @@
+{
+  "name": "artshoptheme",
+  "version": "1.0.0",
+  "description": "simple wp theme for an art supply shop ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andybaaall/artShopTheme.git"
+  },
+  "keywords": [
+    "php",
+    "wordpress",
+    "custom",
+    "theme",
+    "js",
+    "css",
+    "html",
+    "npm"
+  ],
+  "author": "andy ball",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andybaaall/artShopTheme/issues"
+  },
+  "homepage": "https://github.com/andybaaall/artShopTheme#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "popper.js": "^1.16.0"
+  }
+}

@@ -1,4 +1,4 @@
-# ## Art Supply Shop WP Theme
+# ## Art Supply Shop Wordpress Theme
 
 Super simple Wordpress theme for an art supply store. Are we allowed to say which one? It's a homework project, not a commercial project. It's for Wellington's very own [French Art Shop](https://thefrenchartshop.co.nz/).
 
