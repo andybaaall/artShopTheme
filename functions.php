@@ -17,7 +17,37 @@ $customHeaderDefaults = array(
     'height'                 => 400,		// setting w & h allows cropping that preserves aspect ratio
 );
 
+// custom post types
+function add_custom_post_types(){
+    $promotionPostType_args = array(
+        'labels' => array(
+            'name' => 'Promotions',
+            'singular_name' => 'Promotion',
+            'add_new_item' => 'Add a New Promotion',
+            'edit_item' => 'Edit Promotion'),   // and so on ...
+        'description' => 'Manage special offers, promotions &c. here.',
+        'hierarchical' => true,
+        'public' => true,
+        'show_in_nav_menus' => false,
+        'show_in_rest' => false,
+        'show_in_menu' => true,
+        'menu_position' => 6,
+        'menu_icon' => 'dashicons-art',
+        'rewrite' => false,
+        'supports' => array(
+            'title',
+            'editor',
+            'thumbnail',
+            'post-formats'
+        )
+    );
+
+    register_post_type('promotion', $promotionPostType_args);
+}
+
+// add actions
 add_action( 'wp_enqueue_scripts', 'loadScripts' );
+add_action('init', 'add_custom_post_types');
 
 // theme support
 add_theme_support('wp-block-styles');   // Gutenberg

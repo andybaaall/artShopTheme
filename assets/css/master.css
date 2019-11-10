@@ -1,3 +1,9 @@
 .headerImage{
     background: no-repeat center contain;
 }
+
+.promotionBanner {
+    background: #add5de;
+    min-height: 5rem;
+    max-height: 10rem;
+}

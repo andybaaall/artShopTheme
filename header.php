@@ -10,3 +10,9 @@
         <?php wp_head(); ?>
     </head>
     <body>
+
+        <div class="container-fluid p-0">
+            <div class="headerImage" style="background-image:url(<?php echo get_header_image(); ?>);">
+                <h1 class="display-3 text-light"><?php echo get_bloginfo('name'); ?></h1>
+            </div>
+        </div>
